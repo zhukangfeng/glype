@@ -22,7 +22,9 @@ require 'includes/init.php';
 sendNoCache();
 
 # Start the output buffer
-ob_start('render');
+# orignal
+# ob_start('render');
+ob_start();
 
 # Flag valid entry point for hotlink protection
 if (!isset($_GET['e']) || $_GET['e']!='no_hotlink') {
